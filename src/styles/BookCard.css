@@ -1,0 +1,200 @@
+/* ==========================================================================
+   BOOK CARD AND GRID STYLES
+   ========================================================================== */
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  padding: 20px;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+/* Beautiful dynamic cover mock */
+.book-cover-mock {
+  height: 140px;
+  width: 100%;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px;
+  margin-bottom: 16px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 -40px 40px rgba(0, 0, 0, 0.4);
+}
+
+.book-cover-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  opacity: 0.15;
+  transform: rotate(15deg);
+}
+
+.book-cover-genre {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+}
+
+.book-cover-title-overlay {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Card details styling */
+.book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.book-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.book-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.book-genre-badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(99, 102, 241, 0.1);
+  color: #a5b4fc;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  font-weight: 500;
+}
+
+.book-rating {
+  display: flex;
+  gap: 2px;
+  color: var(--warning);
+}
+
+.rating-star {
+  fill: currentColor;
+}
+
+.rating-star-empty {
+  fill: transparent;
+  stroke: currentColor;
+}
+
+/* Card actions at the bottom */
+.book-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  opacity: 0.4;
+  transform: translateY(4px);
+  transition: var(--transition-smooth);
+}
+
+.book-card:hover .book-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-card-edit {
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
+
+.btn-card-edit:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-card-delete {
+  background: rgba(239, 68, 68, 0.08);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  padding: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+}
+
+.btn-card-delete:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: white;
+}
+
+/* Custom Grid empty state styling */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+  grid-column: 1 / -1; /* Stretch across all columns in grid */
+  background: var(--bg-card);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-lg);
+  color: var(--text-muted);
+  gap: 16px;
+}
+
+.empty-state-icon {
+  color: var(--accent-indigo);
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  color: var(--text-main);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.empty-state p {
+  max-width: 320px;
+  font-size: 0.9rem;
+}
+
+/* Card hover glow and dynamic elevations */
+.book-card:hover {
+  transform: translateY(-5px);
+}

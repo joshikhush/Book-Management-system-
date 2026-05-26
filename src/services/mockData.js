@@ -1,0 +1,47 @@
+export const INITIAL_BOOKS = [
+  {
+    id: "1",
+    title: "The Midnight Library",
+    author: "Matt Haig",
+    genre: "Fiction",
+    pubYear: 2020,
+    rating: 5,
+    description: "Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived."
+  },
+  {
+    id: "2",
+    title: "Dune",
+    author: "Frank Herbert",
+    genre: "Sci-Fi",
+    pubYear: 1965,
+    rating: 5,
+    description: "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, who would become the mysterious man known as Muad'Dib. He would avenge the traitorous plot against his noble family."
+  },
+  {
+    id: "3",
+    title: "Educated",
+    author: "Tara Westover",
+    genre: "Biography",
+    pubYear: 2018,
+    rating: 4,
+    description: "An unforgettable memoir about a young girl who, kept out of school, leaves her survivalist family and goes on to earn a PhD from Cambridge University."
+  },
+  {
+    id: "4",
+    title: "Atomic Habits",
+    author: "James Clear",
+    genre: "Self-Help",
+    pubYear: 2018,
+    rating: 5,
+    description: "No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies."
+  },
+  {
+    id: "5",
+    title: "The Silent Patient",
+    author: "Alex Michaelides",
+    genre: "Thriller",
+    pubYear: 2019,
+    rating: 4,
+    description: "Alicia Berenson's life is seemingly perfect. A famous painter married to an in-demand fashion photographer, she lives in a grand house. One evening her husband Gabriel returns home late from a fashion shoot, and Alicia shoots him five times in the face."
+  }
+];
