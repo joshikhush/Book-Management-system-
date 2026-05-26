@@ -7,7 +7,7 @@ A **React + Vite** app for viewing, adding, updating, and deleting books. It use
 | Item | Link |
 |------|------|
 | **GitHub repository** | https://github.com/joshikhush/Book-Management-system- |
-| **Live deployed URL** | _Deploy on Vercel — see [Deploy live](#deploy-live-vercel) below_ |
+| **Live deployed URL** | https://book-management-system-rose.vercel.app/ |
 
 ---
 
@@ -28,7 +28,7 @@ A **React + Vite** app for viewing, adding, updating, and deleting books. It use
 | Styling | Done (dark glassmorphic UI) |
 | README with setup instructions | Done (this file) |
 | GitHub repository published | **Pending** (git initialized, no remote/commits yet) |
-| Live deployment | **Pending** (requires your Vercel/Netlify login) |
+| Live deployment | **Done** (https://book-management-system-rose.vercel.app/) |
 
 **Extras beyond the brief:** dashboard stats, sort options, star ratings, descriptions, toast notifications.
 
