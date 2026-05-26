@@ -6,8 +6,8 @@ A **React + Vite** app for viewing, adding, updating, and deleting books. It use
 
 | Item | Link |
 |------|------|
-| **GitHub repository** | _Add your repo URL after pushing — see [Publish to GitHub](#publish-to-github) below_ |
-| **Live deployed URL** | _Add your Vercel/Netlify URL after deploying — see [Deploy live](#deploy-live-vercel) below_ |
+| **GitHub repository** | https://github.com/joshikhush/Book-Management-system- |
+| **Live deployed URL** | _Deploy on Vercel — see [Deploy live](#deploy-live-vercel) below_ |
 
 ---
 
